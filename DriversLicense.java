@@ -5,29 +5,21 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class DriversLicense
+public class DriversLicense extends Card
 {
     // instance variables - replace the example below with your own
-    private int x;
+    private String expirationDate;
 
-    /**
-     * Constructor for objects of class DriversLicense
-     */
-    public DriversLicense()
+    public DriversLicense(String n, String expirationDate)
     {
-        // initialise instance variables
-        x = 0;
+       super(n);
+       this.expirationDate = expirationDate;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
+    @Override
+    public String toString()
     {
-        // put your code here
-        return x + y;
+        super.toString();
+        return "Expiration date: " + this.expirationDate;
     }
 }
