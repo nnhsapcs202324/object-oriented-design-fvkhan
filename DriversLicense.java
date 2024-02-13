@@ -1,4 +1,4 @@
-
+import java.util.GregorianCalendar;
 /**
  * Write a description of class DriversLicense here.
  *
@@ -22,4 +22,21 @@ public class DriversLicense extends Card
         super.toString();
         return "Expiration date: " + this.expirationDate;
     }
+    
+    @Override
+    public boolean isExpired()
+    {
+        GregorianCalendar calendar = new GregorianCalendar();
+        Integer currentYear = calendar.get(calendar.YEAR);
+        Integer expYear = Integer.valueOf(this.expirationDate);
+        if (expYear>currentYear )
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+
 }

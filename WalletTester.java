@@ -10,10 +10,10 @@ public class WalletTester
     public static void main(String args[])
     {
         ATMCard atm = new ATMCard("fatimah", "123456", "1234");
-        StudentIDCard id = new StudentIDCard("fatimah", "12345");
+        DriversLicense license = new DriversLicense("fatimah", "2020");
         Wallet wallet = new Wallet();
         wallet.addCard(atm);
-        wallet.addCard(id);
-        System.out.println(wallet.toString());
+        wallet.addCard(license);
+        System.out.println(wallet.getExpiredCardCount());
     }
 }

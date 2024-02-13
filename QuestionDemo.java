@@ -23,12 +23,12 @@ public class QuestionDemo
      */
       
     // ChoiceQuestion q2 = new ChoiceQuestion("Who founded Apple?");
-    q2.addChoice("Bill Gates", false);
-    q2.addChoice("Steve Jobs", true);
+    //q2.addChoice("Bill Gates", false);
+    //q2.addChoice("Steve Jobs", true);
       
     Exam exam = new Exam();
     exam.addQuestion(q);
-    exam.addQuestion(q2);
+    //exam.addQuestion(q2);
     exam.askQuestions();
    }
 }

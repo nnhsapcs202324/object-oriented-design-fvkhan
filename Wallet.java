@@ -42,4 +42,21 @@ public class Wallet
             return "No cards";
         }
     }
+    
+    public int getExpiredCardCount()
+    {
+        int count = 0;
+        if (card1.isExpired())
+        {
+            count++;
+        }
+       
+        if (card2.isExpired())
+        {
+            count++;
+        }
+       
+        return count;
+    }
+
 }
