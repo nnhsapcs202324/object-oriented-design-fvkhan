@@ -7,10 +7,10 @@ import java.awt.geom.Point2D;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+
 public class TriangleComponent extends JComponent
 {
     private static final int MAX_POINTS = 3;
-
     public TriangleComponent()
     {
         

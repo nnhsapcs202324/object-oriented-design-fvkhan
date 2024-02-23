@@ -1,14 +1,21 @@
 import javax.swing.JFrame;
-
+import javax.swing.JLabel;
+import javax.swing.JPanel;
 public class TriangleFrame extends JFrame
 {
     private TriangleComponent component;
-
+    private JLabel label;
+    private JPanel panel;
+    private int clickCount;
     private static final int FRAME_WIDTH = 400;
     private static final int FRAME_HEIGHT = 400;
-
+    
     public TriangleFrame()
     {
+        this.panel = new JPanel();
+        this.label = new JLabel("Number of clicks: " + this.clickCount);
+        this.panel.add(this.label);
+        this.add(this.panel);
         this.component = new TriangleComponent();
         
         this.add(component);
