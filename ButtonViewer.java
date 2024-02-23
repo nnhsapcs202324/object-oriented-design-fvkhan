@@ -61,8 +61,16 @@ public class ButtonViewer
         @Override
         public void actionPerformed(ActionEvent event)
         {
-            // clickCount++;
-            // label.setText(clickCount + " clicks");
+            // 4. handle events generated from components or otherwise
+            if (event.getSource() == buttonA)
+            {
+                clickCountA++;
+            }
+            else if (event.getSource() == buttonB)
+            {
+                clickCountB++;
+            }
+            label.setText("Button A: " + clickCountA + " clicks; Button B: " + clickCountB); 
         }
     }
 
