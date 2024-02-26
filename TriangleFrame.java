@@ -4,18 +4,11 @@ import javax.swing.JPanel;
 public class TriangleFrame extends JFrame
 {
     private TriangleComponent component;
-    private JLabel label;
-    private JPanel panel;
-    private int clickCount;
     private static final int FRAME_WIDTH = 400;
     private static final int FRAME_HEIGHT = 400;
     
     public TriangleFrame()
     {
-        this.panel = new JPanel();
-        this.label = new JLabel("Number of clicks: " + this.clickCount);
-        this.panel.add(this.label);
-        this.add(this.panel);
         this.component = new TriangleComponent();
         
         this.add(component);
@@ -24,11 +17,5 @@ public class TriangleFrame extends JFrame
         this.setTitle("Triangle");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
-    }
-    
-
-    public static void main(String [] args)
-    {
-        JFrame frame = new TriangleFrame();
     }
 }
